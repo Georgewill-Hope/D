@@ -52,25 +52,27 @@ const Navbar = () => {
 
   return (
     <nav className="text-black" ref={containerRef}>
-      <div className="fixed top-0 left-0 w-full py-2 px-8 flex justify-between items-center z-1 backdrop-blur-2xl">
-        <Link href="/">
-          <Image
-            src={logo}
-            alt="logo"
-            width={500}
-            height={200}
-            className="w-32 md:w-40"
-          />
-        </Link>
+      <div className="fixed top-0 left-0 w-full py-2 px-8 flex justify-between items-center z-999 backdrop-blur-2xl">
+        <div className="box flex justify-between items-center">
+          <Link href="/">
+            <Image
+              src={logo}
+              alt="logo"
+              width={500}
+              height={200}
+              className="w-32 md:w-40"
+            />
+          </Link>
 
-        <button className="cursor-pointer" onClick={handleToggleMenu}>
-          <FaBars size={30} color="black" />
-        </button>
+          <button className="cursor-pointer" onClick={handleToggleMenu}>
+            <FaBars size={30} color="black" />
+          </button>
+        </div>
       </div>
 
       <div
         id="menu-overlay"
-        className="fixed top-0 left-0 w-full h-screen py-2 px-8 bg-[#c5fb45] z-2 flex flex-col justify-between [clip-path:polygon(0%_0%,100%_0%,100%_0%,0%_0%)]"
+        className="fixed top-0 left-0 w-full h-screen py-2 px-8 bg-[#c5fb45] z-999 flex flex-col justify-between [clip-path:polygon(0%_0%,100%_0%,100%_0%,0%_0%)]"
       >
         <div className="flex justify-between">
           <Link href="/">
@@ -97,7 +99,7 @@ const Navbar = () => {
             </p>
           </button>
 
-          <div className="flex flex-col justify-between w-full md:w-fit">
+          <div className="flex flex-col pb-20 sm:pb-0 justify-between w-full md:w-fit">
             <div className="mt-10">
               {navLinks.map((link, index) => (
                 <div
@@ -120,7 +122,7 @@ const Navbar = () => {
               ))}
             </div>
 
-            <div className="flex justify-between items-end md:gap-20 lg:gap-32 xl:gap-56 w-full md:w-fit">
+            <div className=" flex justify-between items-end md:gap-20 lg:gap-32 xl:gap-56 w-full md:w-fit">
               <div className="flex flex-col">
                 <a href="#">X &#8599;</a>
                 <a href="#">Instargram &#8599;</a>

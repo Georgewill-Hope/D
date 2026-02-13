@@ -24,3 +24,11 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@utility box {
+  @apply w-full max-w-7xl mx-auto;
+}
+
+@utility lime-glow{
+  @apply bg-linear-to-r from-[#8efb45] via-[#c5fb45] to-[#eaed53]
+}
