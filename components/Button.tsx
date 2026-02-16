@@ -1,9 +1,7 @@
 import React from 'react'
 
 const Button = () => {
-  return (
-    <button className='w-fit'>Buy Now</button>
-  )
+  return <button className="w-fit bg-[#1f2a06] tracking-wider px-10 py-2 text-white rounded-lg cursor-pointer">Buy Now</button>;
 }
 
 export default Button
