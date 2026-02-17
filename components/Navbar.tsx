@@ -72,7 +72,7 @@ const Navbar = () => {
 
       <div
         id="menu-overlay"
-        className="fixed top-0 left-0 w-full h-screen py-2 px-8 bg-[#c5fb45] z-999 flex flex-col justify-between [clip-path:polygon(0%_0%,100%_0%,100%_0%,0%_0%)]"
+        className="fixed top-0 left-0 w-full h-screen py-2 px-8 bg-[#ddd535] z-999 flex flex-col justify-between [clip-path:polygon(0%_0%,100%_0%,100%_0%,0%_0%)]"
       >
         <div className="flex justify-between">
           <Link href="/">

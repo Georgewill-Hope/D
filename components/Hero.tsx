@@ -5,14 +5,9 @@ import Button from "./Button";
 import { TbStarFilled } from "react-icons/tb";
 import Image from "next/image";
 import heroImage from "@/public/assets/gift-habeshaw-9I_hAW8JUUg-unsplash-removebg-preview.png";
-import groupImage from "@/public/assets/group.avif";
-import vectorImage from "@/public/assets/vector1.avif";
-import lineImage from "@/public/assets/vector2.avif";
 import cloudImage from "@/public/assets/chuttersnap-9AqIdzEc9pY-unsplash.jpg";
-import miniCloudImage from "@/public/assets/jose-ramos-BWCgQw25XUE-unsplash-removebg-preview.png";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { LiaBalanceScaleSolid } from "react-icons/lia";
 import { GiPerfumeBottle } from "react-icons/gi";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -93,9 +88,10 @@ const Hero = () => {
     return () => ctx.revert();
   }, []);
 
+
   return (
     <section className="w-full bg-gray-50 text-black" ref={heroRef}>
-      <div className="min-h-screen h-fit md:h-[90vh] w-full flex lime-glow text-black relative">
+      <div className="min-h-screen h-fit md:h-[90vh] w-full flex bg-[#ddd535] text-black relative">
         <Image
           src={cloudImage}
           alt="cloud"
@@ -132,7 +128,10 @@ const Hero = () => {
               </div>
             </div>
 
-            <div className="relative size-150 xl:size-200 hidden lg:block" ref={imageRef}>
+            <div
+              className="relative size-150 xl:size-200 hidden lg:block"
+              ref={imageRef}
+            >
               <Image
                 src={heroImage}
                 alt="DD Perfume"
@@ -147,7 +146,9 @@ const Hero = () => {
 
       <div className="w-full min-h-screen flex gap-10 flex-col py-14 md:py-32 box px-8">
         <div className="text-center">
-          <h2 className="font-bold text-2xl md:text-3xl">Our Product Benefits</h2>
+          <h2 className="font-bold text-2xl md:text-3xl">
+            Our Product Benefits
+          </h2>
           <p className="text-gray-500 text-sm md:text-lg">
             Unlock your triue potential with a natural fragrance designed to
             elevate and enhance mental clarity and keep you <br /> at your best
