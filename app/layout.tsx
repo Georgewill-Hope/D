@@ -15,8 +15,24 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Home | DD-Perfumes",
-  description: "A basic perfume app",
+  title: "Home | DD Perfumes",
+  description: "Best Selling Perfume in the world",
+  keywords: ["DD", "Perfumes", "Oil Perfumes", "DD Oil Perfumes"],
+  openGraph: {
+    title: "Home | DD Perfumes",
+    description: "Best Selling Perfume in the world",
+    siteName: "https:/dd-perfumes-hopedev.vercel.app",
+    locale: "en_US",
+    images: ["https:/dd-perfumes-hopedev.vercel.app/opengraph-image.png"],
+  },
+  twitter: {
+    title: "Home | DD Perfumes",
+    description: "Best Selling Perfume in the world",
+    card: "summary_large_image",
+    images: ["https:/dd-perfumes-hopedev.vercel.app/opengraph-image.png"],
+    creator: "@Hopedev_",
+  },
+  authors: [{ name: "DD Prefumes" }],
 };
 
 export default function RootLayout({
@@ -32,7 +48,7 @@ export default function RootLayout({
         <main>
           <Navbar />
           {children}
-          <Footer/>
+          <Footer />
         </main>
       </body>
     </html>
