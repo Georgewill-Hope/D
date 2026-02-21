@@ -21,15 +21,15 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Home | DD Perfumes",
     description: "Best Selling Perfume in the world",
-    siteName: "https:/dd-perfumes-hopedev.vercel.app",
+    siteName: "https://dd-perfumes-hopedev.vercel.app",
     locale: "en_US",
-    images: ["https:/dd-perfumes-hopedev.vercel.app/opengraph-image.png"],
+    images: ["https://dd-perfumes-hopedev.vercel.app/opengraph-image.png"],
   },
   twitter: {
     title: "Home | DD Perfumes",
     description: "Best Selling Perfume in the world",
     card: "summary_large_image",
-    images: ["https:/dd-perfumes-hopedev.vercel.app/opengraph-image.png"],
+    images: ["https://dd-perfumes-hopedev.vercel.app/opengraph-image.png"],
     creator: "@Hopedev_",
   },
   authors: [{ name: "DD Prefumes" }],
